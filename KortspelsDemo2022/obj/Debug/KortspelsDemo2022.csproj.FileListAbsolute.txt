@@ -1,0 +1,36 @@
+C:\Users\yngve.juhlin\source\repos\KortspelsDemo2022\KortspelsDemo2022\bin\Debug\KortspelsDemo2022.exe.config
+C:\Users\yngve.juhlin\source\repos\KortspelsDemo2022\KortspelsDemo2022\bin\Debug\KortspelsDemo2022.exe
+C:\Users\yngve.juhlin\source\repos\KortspelsDemo2022\KortspelsDemo2022\bin\Debug\KortspelsDemo2022.pdb
+C:\Users\yngve.juhlin\source\repos\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.csproj.AssemblyReference.cache
+C:\Users\yngve.juhlin\source\repos\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.EnkeltKortspel.resources
+C:\Users\yngve.juhlin\source\repos\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.Properties.Resources.resources
+C:\Users\yngve.juhlin\source\repos\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.csproj.GenerateResource.cache
+C:\Users\yngve.juhlin\source\repos\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.csproj.CoreCompileInputs.cache
+C:\Users\yngve.juhlin\source\repos\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.exe
+C:\Users\yngve.juhlin\source\repos\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.pdb
+H:\Programmering\Prog 2\KortspelsDemo2022\KortspelsDemo2022\bin\Debug\KortspelsDemo2022.exe.config
+H:\Programmering\Prog 2\KortspelsDemo2022\KortspelsDemo2022\bin\Debug\KortspelsDemo2022.exe
+H:\Programmering\Prog 2\KortspelsDemo2022\KortspelsDemo2022\bin\Debug\KortspelsDemo2022.pdb
+H:\Programmering\Prog 2\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.EnkeltKortspel.resources
+H:\Programmering\Prog 2\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.Properties.Resources.resources
+H:\Programmering\Prog 2\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.TestMedBild.resources
+H:\Programmering\Prog 2\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.csproj.GenerateResource.cache
+H:\Programmering\Prog 2\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.csproj.CoreCompileInputs.cache
+H:\Programmering\Prog 2\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.exe
+H:\Programmering\Prog 2\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.pdb
+H:\Programmering\Prog 2\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.csprojAssemblyReference.cache
+C:\Users\yngve.juhlin\source\repos\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.EnkeltKortspel2.resources
+C:\Users\yngve.juhlin\source\repos\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.TestMedBilder.resources
+C:\Users\harry.ali\source\repos\KortspelsDemo2022\KortspelsDemo2022\KortspelsDemo2022\bin\Debug\KortspelsDemo2022.exe.config
+C:\Users\harry.ali\source\repos\KortspelsDemo2022\KortspelsDemo2022\KortspelsDemo2022\bin\Debug\KortspelsDemo2022.exe
+C:\Users\harry.ali\source\repos\KortspelsDemo2022\KortspelsDemo2022\KortspelsDemo2022\bin\Debug\KortspelsDemo2022.pdb
+C:\Users\harry.ali\source\repos\KortspelsDemo2022\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.csproj.AssemblyReference.cache
+C:\Users\harry.ali\source\repos\KortspelsDemo2022\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.EnkeltKortspel.resources
+C:\Users\harry.ali\source\repos\KortspelsDemo2022\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.EnkeltKortspel2.resources
+C:\Users\harry.ali\source\repos\KortspelsDemo2022\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.Properties.Resources.resources
+C:\Users\harry.ali\source\repos\KortspelsDemo2022\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.TestMedBilder.resources
+C:\Users\harry.ali\source\repos\KortspelsDemo2022\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.TestMedSpelare.resources
+C:\Users\harry.ali\source\repos\KortspelsDemo2022\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.csproj.GenerateResource.cache
+C:\Users\harry.ali\source\repos\KortspelsDemo2022\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.csproj.CoreCompileInputs.cache
+C:\Users\harry.ali\source\repos\KortspelsDemo2022\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.exe
+C:\Users\harry.ali\source\repos\KortspelsDemo2022\KortspelsDemo2022\KortspelsDemo2022\obj\Debug\KortspelsDemo2022.pdb
