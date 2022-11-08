@@ -46,41 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnkeltKortspel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EnkeltKortspel.Designer.cs">
-      <DependentUpon>EnkeltKortspel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EnkeltKortspel2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EnkeltKortspel2.Designer.cs">
-      <DependentUpon>EnkeltKortspel2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Kort.cs" />
     <Compile Include="Kortlek.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spelare.cs" />
-    <Compile Include="TestMedBilder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TestMedBilder.Designer.cs">
-      <DependentUpon>TestMedBilder.cs</DependentUpon>
-    </Compile>
     <Compile Include="TestMedSpelare.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TestMedSpelare.Designer.cs">
       <DependentUpon>TestMedSpelare.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="EnkeltKortspel.resx">
-      <DependentUpon>EnkeltKortspel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EnkeltKortspel2.resx">
-      <DependentUpon>EnkeltKortspel2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -90,9 +66,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TestMedBilder.resx">
-      <DependentUpon>TestMedBilder.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TestMedSpelare.resx">
       <DependentUpon>TestMedSpelare.cs</DependentUpon>
     </EmbeddedResource>
