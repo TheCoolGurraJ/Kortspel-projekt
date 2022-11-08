@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+
 
 namespace KortspelsDemo2022
 {
@@ -12,6 +14,8 @@ namespace KortspelsDemo2022
         private int _poang;
         //Spelarens alla kort i en lista
         private List<Kort> _hand = new List<Kort>();
+        private GroupBox _groupBox;
+        private Button _BtTaBort;
 
         //Property för namn
         public string Namn
@@ -30,6 +34,20 @@ namespace KortspelsDemo2022
         public List<Kort> Hand
         {
             get { return _hand; }
+        }
+
+        public GroupBox GroupBox
+        {
+            get { return _groupBox; }
+            set { _groupBox = value; }
+
+        }
+
+        public Button BtTaBort
+        {
+            get { return _BtTaBort; }
+            set { _BtTaBort = value; }
+
         }
 
         //Konstruktor
