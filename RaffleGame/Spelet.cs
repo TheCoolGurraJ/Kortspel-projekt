@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace KortspelsDemo2022
 {
-    public partial class TestMedSpelare : Form
+    public partial class Spelet : Form
     {
         Spelare sp1 = new Spelare("Ahmed");
         Spelare sp2 = new Spelare("Peter");
@@ -24,7 +24,12 @@ namespace KortspelsDemo2022
 
         //Skapa en ny kortlek.
         Kortlek kortlek = new Kortlek(true);
-        public TestMedSpelare()
+
+        List<PictureBox> PbSpelareAttTaBort = new List<PictureBox>();
+        Gamemode gamemode = new Gamemode();
+
+
+        public Spelet()
         {
             InitializeComponent();
 
@@ -79,29 +84,33 @@ namespace KortspelsDemo2022
 
         }
 
+
         private void PbSpelare_Click(object sender, EventArgs e)
         {
+            
             PictureBox PbSpelare = sender as PictureBox;
             //Ta bort kortet från denna position.
-            int Pbindex = currSpelare.GroupBox.Controls.IndexOf(PbSpelare);
-            
+            if (currSpelare.GroupBox.Controls.Contains(PbSpelare))
+            {
+                PbSpelareAttTaBort.Add(PbSpelare);
+            }
         }
 
         private void NästaSpelare()
         {
             int currSpelareIndex = SpelarList.ToList().IndexOf(currSpelare);
+            PbSpelareAttTaBort.Clear();
 
-            if ( currSpelareIndex >= 2)
+            if (currSpelareIndex >= 2)
             {
-                //klart
+               
             }
             else
             {
+                SpelarList[currSpelareIndex] = currSpelare;
                 currSpelare = SpelarList[currSpelareIndex + 1];
+                InaktiveraAndraSpelare();
             }
-             
-
-
         }
 
         private void InaktiveraAndraSpelare()
@@ -133,9 +142,18 @@ namespace KortspelsDemo2022
 
         private void BtTaBort_Click(object sender, EventArgs e)
         {
+            foreach(PictureBox PbSpelare in PbSpelareAttTaBort)
+            {
+                int NyttKortIndex = currSpelare.GroupBox.Controls.IndexOf(PbSpelare);
+                //Tar bort kortet
+                currSpelare.GeKort(NyttKortIndex);
 
-        }
-
-       
+                Kort kort = kortlek.GeKort();
+                currSpelare.TaEmotKort(kort);
+                //Tar bort kortet från groupboxen
+                PbSpelare.Image = kort.Bild;   
+            }
+            NästaSpelare();
+        } 
     }
 }

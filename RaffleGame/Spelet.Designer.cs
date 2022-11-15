@@ -1,7 +1,7 @@
 ﻿
 namespace KortspelsDemo2022
 {
-    partial class TestMedSpelare
+    partial class Spelet
     {
         /// <summary>
         /// Required designer variable.
@@ -202,6 +202,7 @@ namespace KortspelsDemo2022
             this.BtTaBortsp2.TabIndex = 5;
             this.BtTaBortsp2.Text = "Ta bort";
             this.BtTaBortsp2.UseVisualStyleBackColor = true;
+            this.BtTaBortsp2.Click += new System.EventHandler(this.BtTaBort_Click);
             // 
             // BtTaBortsp3
             // 
@@ -211,8 +212,9 @@ namespace KortspelsDemo2022
             this.BtTaBortsp3.TabIndex = 6;
             this.BtTaBortsp3.Text = "Ta bort";
             this.BtTaBortsp3.UseVisualStyleBackColor = true;
+            this.BtTaBortsp3.Click += new System.EventHandler(this.BtTaBort_Click);
             // 
-            // TestMedSpelare
+            // Spelet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -224,7 +226,7 @@ namespace KortspelsDemo2022
             this.Controls.Add(this.GbSp3);
             this.Controls.Add(this.GbSp1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "TestMedSpelare";
+            this.Name = "Spelet";
             this.Text = "TestMedSpelare";
             this.GbSp1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PbSp1K3)).EndInit();

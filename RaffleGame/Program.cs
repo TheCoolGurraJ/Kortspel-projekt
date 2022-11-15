@@ -16,7 +16,7 @@ namespace KortspelsDemo2022
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TestMedSpelare());
+            Application.Run(new Spelet());
         }
     }
 }
