@@ -1,0 +1,11 @@
+C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\bin\Debug\KortspelsDemo2022.exe.config
+C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\bin\Debug\KortspelsDemo2022.exe
+C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\bin\Debug\KortspelsDemo2022.pdb
+C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\obj\Debug\RaffleGame.csproj.AssemblyReference.cache
+C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\obj\Debug\KortspelsDemo2022.Properties.Resources.resources
+C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\obj\Debug\rules_popup.Regler.resources
+C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\obj\Debug\KortspelsDemo2022.TestMedSpelare.resources
+C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\obj\Debug\RaffleGame.csproj.GenerateResource.cache
+C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\obj\Debug\RaffleGame.csproj.CoreCompileInputs.cache
+C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\obj\Debug\KortspelsDemo2022.exe
+C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\obj\Debug\KortspelsDemo2022.pdb

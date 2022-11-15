@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using rules_popup;
 
 namespace KortspelsDemo2022
 {
@@ -136,6 +137,10 @@ namespace KortspelsDemo2022
 
         }
 
-       
+        private void bt_regler_Click(object sender, EventArgs e)
+        {
+            Regler popup = new Regler();
+            DialogResult dialogresult = popup.ShowDialog();
+        }
     }
 }
