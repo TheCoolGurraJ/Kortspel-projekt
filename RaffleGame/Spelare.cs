@@ -50,6 +50,14 @@ namespace KortspelsDemo2022
 
         }
 
+        private int _id;
+
+        //Property för namn
+        public int ID
+        {
+            get { return _id; }
+        }
+
         //Konstruktor
         public Spelare()
         {

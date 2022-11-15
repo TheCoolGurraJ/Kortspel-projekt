@@ -32,5 +32,13 @@ namespace KortspelsDemo2022
         {
             this._mode = mode;
         }
+
+        public Gamemode()
+        {
+            //Man får ett slumpmässigt gamemode.
+            Random rnd = new Random();
+            int rand = rnd.Next(0, 5);
+            this._mode = (Mode)rand;
+        }
     }
 }
