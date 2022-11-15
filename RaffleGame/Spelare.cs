@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace KortspelsDemo2022
+namespace RaffleGame
 {
     class Spelare
     {
@@ -48,14 +48,6 @@ namespace KortspelsDemo2022
             get { return _BtTaBort; }
             set { _BtTaBort = value; }
 
-        }
-
-        private int _id;
-
-        //Property för namn
-        public int ID
-        {
-            get { return _id; }
         }
 
         //Konstruktor

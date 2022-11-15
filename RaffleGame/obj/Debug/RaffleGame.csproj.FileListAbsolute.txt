@@ -9,3 +9,14 @@ C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\obj\Debug\Raffle
 C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\obj\Debug\RaffleGame.csproj.CoreCompileInputs.cache
 C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\obj\Debug\KortspelsDemo2022.exe
 C:\Users\harry.ali\Documents\GitHub\Kortspel-projekt\RaffleGame\obj\Debug\KortspelsDemo2022.pdb
+C:\Users\gustav.jonsson12\OneDrive - Academedia\Prog2\RaffleGame\RaffleGame\obj\Debug\RaffleGame.csproj.AssemblyReference.cache
+C:\Users\gustav.jonsson12\OneDrive - Academedia\Prog2\RaffleGame\RaffleGame\bin\Debug\RaffleGame.exe.config
+C:\Users\gustav.jonsson12\OneDrive - Academedia\Prog2\RaffleGame\RaffleGame\bin\Debug\RaffleGame.exe
+C:\Users\gustav.jonsson12\OneDrive - Academedia\Prog2\RaffleGame\RaffleGame\bin\Debug\RaffleGame.pdb
+C:\Users\gustav.jonsson12\OneDrive - Academedia\Prog2\RaffleGame\RaffleGame\obj\Debug\RaffleGame.Properties.Resources.resources
+C:\Users\gustav.jonsson12\OneDrive - Academedia\Prog2\RaffleGame\RaffleGame\obj\Debug\rules_popup.Regler.resources
+C:\Users\gustav.jonsson12\OneDrive - Academedia\Prog2\RaffleGame\RaffleGame\obj\Debug\RaffleGame.csproj.GenerateResource.cache
+C:\Users\gustav.jonsson12\OneDrive - Academedia\Prog2\RaffleGame\RaffleGame\obj\Debug\RaffleGame.csproj.CoreCompileInputs.cache
+C:\Users\gustav.jonsson12\OneDrive - Academedia\Prog2\RaffleGame\RaffleGame\obj\Debug\RaffleGame.exe
+C:\Users\gustav.jonsson12\OneDrive - Academedia\Prog2\RaffleGame\RaffleGame\obj\Debug\RaffleGame.pdb
+C:\Users\gustav.jonsson12\OneDrive - Academedia\Prog2\RaffleGame\RaffleGame\obj\Debug\RaffleGame.Spelet.resources

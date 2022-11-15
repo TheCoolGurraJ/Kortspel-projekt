@@ -1,7 +1,7 @@
 ﻿
-namespace KortspelsDemo2022
+namespace RaffleGame
 {
-    partial class TestMedSpelare
+    partial class Spelet
     {
         /// <summary>
         /// Required designer variable.
@@ -45,6 +45,8 @@ namespace KortspelsDemo2022
             this.BtTaBortsp2 = new System.Windows.Forms.Button();
             this.BtTaBortsp3 = new System.Windows.Forms.Button();
             this.bt_regler = new System.Windows.Forms.Button();
+            this.LblGamemodeÄr = new System.Windows.Forms.Label();
+            this.LblGamemode = new System.Windows.Forms.Label();
             this.GbSp1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbSp1K3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbSp1K2)).BeginInit();
@@ -65,34 +67,39 @@ namespace KortspelsDemo2022
             this.GbSp1.Controls.Add(this.PbSp1K2);
             this.GbSp1.Controls.Add(this.PbSp1K1);
             this.GbSp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GbSp1.Location = new System.Drawing.Point(38, 9);
+            this.GbSp1.Location = new System.Drawing.Point(57, 14);
+            this.GbSp1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GbSp1.Name = "GbSp1";
-            this.GbSp1.Size = new System.Drawing.Size(325, 166);
+            this.GbSp1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.GbSp1.Size = new System.Drawing.Size(488, 255);
             this.GbSp1.TabIndex = 0;
             this.GbSp1.TabStop = false;
             this.GbSp1.Text = "Nisse";
             // 
             // PbSp1K3
             // 
-            this.PbSp1K3.Location = new System.Drawing.Point(215, 24);
+            this.PbSp1K3.Location = new System.Drawing.Point(322, 37);
+            this.PbSp1K3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PbSp1K3.Name = "PbSp1K3";
-            this.PbSp1K3.Size = new System.Drawing.Size(100, 136);
+            this.PbSp1K3.Size = new System.Drawing.Size(150, 209);
             this.PbSp1K3.TabIndex = 2;
             this.PbSp1K3.TabStop = false;
             // 
             // PbSp1K2
             // 
-            this.PbSp1K2.Location = new System.Drawing.Point(109, 24);
+            this.PbSp1K2.Location = new System.Drawing.Point(164, 37);
+            this.PbSp1K2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PbSp1K2.Name = "PbSp1K2";
-            this.PbSp1K2.Size = new System.Drawing.Size(100, 136);
+            this.PbSp1K2.Size = new System.Drawing.Size(150, 209);
             this.PbSp1K2.TabIndex = 1;
             this.PbSp1K2.TabStop = false;
             // 
             // PbSp1K1
             // 
-            this.PbSp1K1.Location = new System.Drawing.Point(4, 24);
+            this.PbSp1K1.Location = new System.Drawing.Point(6, 37);
+            this.PbSp1K1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PbSp1K1.Name = "PbSp1K1";
-            this.PbSp1K1.Size = new System.Drawing.Size(100, 136);
+            this.PbSp1K1.Size = new System.Drawing.Size(150, 209);
             this.PbSp1K1.TabIndex = 0;
             this.PbSp1K1.TabStop = false;
             // 
@@ -102,34 +109,39 @@ namespace KortspelsDemo2022
             this.GbSp3.Controls.Add(this.pictureBox2);
             this.GbSp3.Controls.Add(this.pictureBox3);
             this.GbSp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GbSp3.Location = new System.Drawing.Point(38, 359);
+            this.GbSp3.Location = new System.Drawing.Point(57, 552);
+            this.GbSp3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GbSp3.Name = "GbSp3";
-            this.GbSp3.Size = new System.Drawing.Size(325, 179);
+            this.GbSp3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.GbSp3.Size = new System.Drawing.Size(488, 275);
             this.GbSp3.TabIndex = 3;
             this.GbSp3.TabStop = false;
             this.GbSp3.Text = "Nicklas";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(213, 37);
+            this.pictureBox1.Location = new System.Drawing.Point(320, 57);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 136);
+            this.pictureBox1.Size = new System.Drawing.Size(150, 209);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(108, 37);
+            this.pictureBox2.Location = new System.Drawing.Point(162, 57);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 136);
+            this.pictureBox2.Size = new System.Drawing.Size(150, 209);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(3, 37);
+            this.pictureBox3.Location = new System.Drawing.Point(4, 57);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 136);
+            this.pictureBox3.Size = new System.Drawing.Size(150, 209);
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
@@ -139,43 +151,47 @@ namespace KortspelsDemo2022
             this.GbSp2.Controls.Add(this.pictureBox5);
             this.GbSp2.Controls.Add(this.pictureBox6);
             this.GbSp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GbSp2.Location = new System.Drawing.Point(38, 182);
+            this.GbSp2.Location = new System.Drawing.Point(57, 280);
+            this.GbSp2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GbSp2.Name = "GbSp2";
-            this.GbSp2.Size = new System.Drawing.Size(325, 170);
+            this.GbSp2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.GbSp2.Size = new System.Drawing.Size(488, 262);
             this.GbSp2.TabIndex = 4;
             this.GbSp2.TabStop = false;
             this.GbSp2.Text = "ww";
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(215, 28);
+            this.pictureBox4.Location = new System.Drawing.Point(322, 43);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 136);
+            this.pictureBox4.Size = new System.Drawing.Size(150, 209);
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(108, 28);
+            this.pictureBox5.Location = new System.Drawing.Point(162, 43);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 136);
+            this.pictureBox5.Size = new System.Drawing.Size(150, 209);
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(3, 28);
+            this.pictureBox6.Location = new System.Drawing.Point(4, 43);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 136);
+            this.pictureBox6.Size = new System.Drawing.Size(150, 209);
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
             // BtTaBortsp1
             // 
-            this.BtTaBortsp1.Location = new System.Drawing.Point(388, 78);
-            this.BtTaBortsp1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtTaBortsp1.Location = new System.Drawing.Point(582, 120);
             this.BtTaBortsp1.Name = "BtTaBortsp1";
-            this.BtTaBortsp1.Size = new System.Drawing.Size(55, 20);
+            this.BtTaBortsp1.Size = new System.Drawing.Size(82, 31);
             this.BtTaBortsp1.TabIndex = 3;
             this.BtTaBortsp1.Text = "Ta bort";
             this.BtTaBortsp1.UseVisualStyleBackColor = true;
@@ -183,39 +199,62 @@ namespace KortspelsDemo2022
             // 
             // BtTaBortsp2
             // 
-            this.BtTaBortsp2.Location = new System.Drawing.Point(388, 255);
-            this.BtTaBortsp2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtTaBortsp2.Location = new System.Drawing.Point(582, 392);
             this.BtTaBortsp2.Name = "BtTaBortsp2";
-            this.BtTaBortsp2.Size = new System.Drawing.Size(55, 20);
+            this.BtTaBortsp2.Size = new System.Drawing.Size(82, 31);
             this.BtTaBortsp2.TabIndex = 5;
             this.BtTaBortsp2.Text = "Ta bort";
             this.BtTaBortsp2.UseVisualStyleBackColor = true;
+            this.BtTaBortsp2.Click += new System.EventHandler(this.BtTaBort_Click);
             // 
             // BtTaBortsp3
             // 
-            this.BtTaBortsp3.Location = new System.Drawing.Point(388, 443);
-            this.BtTaBortsp3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtTaBortsp3.Location = new System.Drawing.Point(582, 682);
             this.BtTaBortsp3.Name = "BtTaBortsp3";
-            this.BtTaBortsp3.Size = new System.Drawing.Size(55, 20);
+            this.BtTaBortsp3.Size = new System.Drawing.Size(82, 31);
             this.BtTaBortsp3.TabIndex = 6;
             this.BtTaBortsp3.Text = "Ta bort";
             this.BtTaBortsp3.UseVisualStyleBackColor = true;
+            this.BtTaBortsp3.Click += new System.EventHandler(this.BtTaBort_Click);
             // 
             // bt_regler
             // 
-            this.bt_regler.Location = new System.Drawing.Point(710, 255);
+            this.bt_regler.Location = new System.Drawing.Point(1065, 392);
+            this.bt_regler.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bt_regler.Name = "bt_regler";
-            this.bt_regler.Size = new System.Drawing.Size(75, 23);
+            this.bt_regler.Size = new System.Drawing.Size(112, 35);
             this.bt_regler.TabIndex = 7;
             this.bt_regler.Text = "Regler";
             this.bt_regler.UseVisualStyleBackColor = true;
             this.bt_regler.Click += new System.EventHandler(this.bt_regler_Click);
             // 
-            // TestMedSpelare
+            // LblGamemodeÄr
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.LblGamemodeÄr.AutoSize = true;
+            this.LblGamemodeÄr.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblGamemodeÄr.Location = new System.Drawing.Point(818, 110);
+            this.LblGamemodeÄr.Name = "LblGamemodeÄr";
+            this.LblGamemodeÄr.Size = new System.Drawing.Size(307, 46);
+            this.LblGamemodeÄr.TabIndex = 8;
+            this.LblGamemodeÄr.Text = "Gamemodet är: ";
+            // 
+            // LblGamemode
+            // 
+            this.LblGamemode.AutoSize = true;
+            this.LblGamemode.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblGamemode.Location = new System.Drawing.Point(1131, 110);
+            this.LblGamemode.Name = "LblGamemode";
+            this.LblGamemode.Size = new System.Drawing.Size(259, 46);
+            this.LblGamemode.TabIndex = 9;
+            this.LblGamemode.Text = "Högsta paret!";
+            // 
+            // Spelet
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1043, 652);
+            this.ClientSize = new System.Drawing.Size(1564, 1003);
+            this.Controls.Add(this.LblGamemode);
+            this.Controls.Add(this.LblGamemodeÄr);
             this.Controls.Add(this.bt_regler);
             this.Controls.Add(this.BtTaBortsp3);
             this.Controls.Add(this.BtTaBortsp2);
@@ -223,7 +262,8 @@ namespace KortspelsDemo2022
             this.Controls.Add(this.GbSp2);
             this.Controls.Add(this.GbSp3);
             this.Controls.Add(this.GbSp1);
-            this.Name = "TestMedSpelare";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "Spelet";
             this.Text = "TestMedSpelare";
             this.GbSp1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PbSp1K3)).EndInit();
@@ -238,6 +278,7 @@ namespace KortspelsDemo2022
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -259,5 +300,7 @@ namespace KortspelsDemo2022
         private System.Windows.Forms.Button BtTaBortsp2;
         private System.Windows.Forms.Button BtTaBortsp3;
         private System.Windows.Forms.Button bt_regler;
+        private System.Windows.Forms.Label LblGamemodeÄr;
+        private System.Windows.Forms.Label LblGamemode;
     }
 }

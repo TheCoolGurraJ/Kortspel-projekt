@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace KortspelsDemo2022
+namespace RaffleGame
 {
     class Kort
     {

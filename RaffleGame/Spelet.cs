@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using rules_popup;
 
-namespace KortspelsDemo2022
+namespace RaffleGame
 {
-    public partial class TestMedSpelare : Form
+    public partial class Spelet : Form
     {
         Spelare sp1 = new Spelare("Ahmed");
         Spelare sp2 = new Spelare("Peter");
@@ -25,7 +25,11 @@ namespace KortspelsDemo2022
 
         //Skapa en ny kortlek.
         Kortlek kortlek = new Kortlek(true);
-        public TestMedSpelare()
+
+        List<PictureBox> PbSpelareAttTaBort = new List<PictureBox>();
+        Gamemode gamemode = new Gamemode();
+
+        public Spelet()
         {
             InitializeComponent();
 
@@ -61,6 +65,8 @@ namespace KortspelsDemo2022
         private void StartaSpelet()
         {
             InaktiveraAndraSpelare();
+            LblGamemode.Visible = false;
+            LblGamemodeÄr.Visible = false;
             //Ge kort till alla spelare och visa de i deras händer.
             for(int i = 0; i<SpelarList.Length;i++)
             {
@@ -76,8 +82,102 @@ namespace KortspelsDemo2022
                     
                 }
             }
+        }
 
+        private void GamemodeFasen()
+        {
+            LblGamemodeÄr.Visible = true;
+            LblGamemode.Visible = true;
+            LblGamemode.Text = gamemode.mode.ToString();
 
+            Spelare SpelareSomVann = new Spelare();
+
+            if(gamemode.mode == Gamemode.Mode.HighestValue)
+            {
+                int högstavärde = 0;
+                foreach(Spelare spelare in SpelarList)
+                {
+                    int tmp = 0;
+                    foreach(Kort kort in spelare.Hand)
+                    {
+                        tmp += kort.Valor;
+                    }
+                    //om spelarens hand är värt mer än det högsta värdet vi hittils sett.
+                    if (tmp > högstavärde)
+                    {
+                        //den spelaren som har den handen är den som vinner.
+                        SpelareSomVann = spelare;
+                        högstavärde = tmp;
+                    }
+                }
+            }
+
+            if(gamemode.mode == Gamemode.Mode.LowestValue)
+            {
+                int lägstavärde = 0;
+                foreach (Spelare spelare in SpelarList)
+                {
+                    int tmp = 0;
+                    foreach (Kort kort in spelare.Hand)
+                    {
+                        tmp += kort.Valor;
+                    }
+                    //om spelarens hand är värt mindere än det lägsta värdet vi hittils sett.
+                    if (tmp < lägstavärde)
+                    {
+                        //den spelaren som har den handen är den som vinner.
+                        SpelareSomVann = spelare;
+                        lägstavärde = tmp;
+                    }
+                }
+            }
+
+            if(gamemode.mode == Gamemode.Mode.MostOfBlack)
+            {
+                int mestavsvart = 0;
+                foreach(Spelare spelare in SpelarList)
+                {
+                    int tmp = 0;
+                    foreach(Kort kort in spelare.Hand)
+                    {
+                        if(kort.Farg == Kort.kortfarg.klöver || kort.Farg == Kort.kortfarg.spader)
+                        {
+                            tmp++;
+                        }
+                    }
+                    if(tmp > mestavsvart)
+                    {
+                        SpelareSomVann = spelare;
+                        mestavsvart = tmp;
+                    }
+                }
+            }
+
+            if (gamemode.mode == Gamemode.Mode.MostOfRed)
+            {
+                int mestavröd = 0;
+                foreach (Spelare spelare in SpelarList)
+                {
+                    int tmp = 0;
+                    foreach (Kort kort in spelare.Hand)
+                    {
+                        if (kort.Farg == Kort.kortfarg.hjärter || kort.Farg == Kort.kortfarg.ruter)
+                        {
+                            tmp++;
+                        }
+                    }
+                    if (tmp > mestavröd)
+                    {
+                        SpelareSomVann = spelare;
+                        mestavröd = tmp;
+                    }
+                }
+            }
+
+            if(gamemode.mode == Gamemode.Mode.MostOfPair)
+            {
+                throw new NotImplementedException();
+            }
         }
 
         private void PbSpelare_Click(object sender, EventArgs e)
@@ -85,20 +185,26 @@ namespace KortspelsDemo2022
             PictureBox PbSpelare = sender as PictureBox;
             //Ta bort kortet från denna position.
             int Pbindex = currSpelare.GroupBox.Controls.IndexOf(PbSpelare);
-            
+            if (currSpelare.GroupBox.Controls.Contains(PbSpelare))
+            {
+                PbSpelareAttTaBort.Add(PbSpelare);
+            }
         }
 
         private void NästaSpelare()
         {
             int currSpelareIndex = SpelarList.ToList().IndexOf(currSpelare);
+            PbSpelareAttTaBort.Clear();
 
             if ( currSpelareIndex >= 2)
             {
-                //klart
+                GamemodeFasen();
             }
             else
             {
+                SpelarList[currSpelareIndex] = currSpelare;
                 currSpelare = SpelarList[currSpelareIndex + 1];
+                InaktiveraAndraSpelare();
             }
              
 
@@ -134,9 +240,23 @@ namespace KortspelsDemo2022
 
         private void BtTaBort_Click(object sender, EventArgs e)
         {
+            if (PbSpelareAttTaBort.Count > 0)
+            {
+                foreach (PictureBox PbSpelare in PbSpelareAttTaBort)
+                {
+                    int NyttKortIndex = currSpelare.GroupBox.Controls.IndexOf(PbSpelare);
+                    //Tar bort kortet
+                    currSpelare.GeKort(NyttKortIndex);
 
+                    Kort kort = kortlek.GeKort();
+                    currSpelare.TaEmotKort(kort);
+                    //Tar bort kortet från groupboxen
+                    PbSpelare.Image = kort.Bild;
+                }
+            }
+            NästaSpelare();
         }
-
+   
         private void bt_regler_Click(object sender, EventArgs e)
         {
             Regler popup = new Regler();
