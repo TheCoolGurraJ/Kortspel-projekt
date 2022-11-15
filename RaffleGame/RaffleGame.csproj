@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6108BBDD-D033-4181-BCDC-DE7925B89552}</ProjectGuid>
+    <ProjectGuid>{3F1F9805-61D9-4539-83DB-742A3D61410F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>KortspelsDemo2022</RootNamespace>
     <AssemblyName>KortspelsDemo2022</AssemblyName>
@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Gamemode.cs" />
     <Compile Include="Kort.cs" />
     <Compile Include="Kortlek.cs" />
     <Compile Include="Program.cs" />
