@@ -9,60 +9,83 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using rules_popup;
 
-namespace KortspelsDemo2022
+namespace RaffleGame
 {
-    public partial class TestMedSpelare : Form
+    public partial class Spelet : Form
     {
-        Spelare sp1 = new Spelare("Ahmed");
-        Spelare sp2 = new Spelare("Peter");
-        Spelare sp3 = new Spelare("Nicklas");
 
         //lista över alla spelare så att vi lätt kan iterera över de.
-        Spelare[] SpelarList = new Spelare[3];
+        List<Spelare> SpelarList = new List<Spelare>();
 
         //den spelare som har sin tur just nu.
         Spelare currSpelare;
 
         //Skapa en ny kortlek.
         Kortlek kortlek = new Kortlek(true);
-        public TestMedSpelare()
+
+        List<PictureBox> PbSpelareAttTaBort = new List<PictureBox>();
+        Gamemode gamemode = new Gamemode(Gamemode.Mode.MostOfPair);
+        public Spelet()
         {
             InitializeComponent();
+        }
 
-            GbSp1.Text = sp1.Namn;
-            GbSp2.Text = sp2.Namn;
-            GbSp3.Text = sp3.Namn;
+        //Skapar vår lista av spelare från de vi skapade från startsidan.
+        public void SkapaSpelarList(Spelare sp1, Spelare sp2)
+        {
+            SpelarList.Add(sp1);
+            SpelarList.Add(sp2);
+        }
+        public void SkapaSpelarList(Spelare sp1, Spelare sp2, Spelare sp3)
+        {
+            SpelarList.Add(sp1);
+            SpelarList.Add(sp2);
+            SpelarList.Add(sp3);
+
+        }
+
+        public void SpelSetup()
+        {
+            //Sätt varje spelares namn i deras respektive ruta.
+            GbSp1.Text = SpelarList[0].Namn;
+            GbSp2.Text = SpelarList[1].Namn;
 
             //Koppla ihop varje spelares groupbox till deras property.
-            sp1.GroupBox = GbSp1;
-            sp2.GroupBox = GbSp2;
-            sp3.GroupBox = GbSp3;
+            SpelarList[0].GroupBox = GbSp1;
+            SpelarList[1].GroupBox = GbSp2;
 
             //Koplla ihop knappen för att ta bort med spelarnas properties.
-            sp1.BtTaBort = BtTaBortsp1;
-            sp2.BtTaBort = BtTaBortsp2;
-            sp3.BtTaBort = BtTaBortsp3;
+            SpelarList[0].BtTaBort = BtTaBortsp1;
+            SpelarList[1].BtTaBort = BtTaBortsp2;
 
-            //Sätt in alla spelare i listan
-            SpelarList[0] = sp1;
-            SpelarList[1] = sp2;
-            SpelarList[2] = sp3;
+            //om vi har 3 spelare.
+            if (SpelarList.Count > 2)
+            {
+                GbSp3.Text = SpelarList[2].Namn;
+                SpelarList[2].GroupBox = GbSp3;
+                SpelarList[2].BtTaBort = BtTaBortsp3;
+            }
+            else
+            {
+                GbSp3.Visible = false;
+                BtTaBortsp3.Visible = false;
+            }
 
             //viktigt att blanda innan man spelar :)
             kortlek.BlandaKortlek();
 
-            //först på tur är spelare nmr 1
-            currSpelare = SpelarList[0];
-
+            //Starta spelet efteråt.
             StartaSpelet();
-
         }
 
         private void StartaSpelet()
         {
+            //först på tur är spelare nmr 1
+            currSpelare = SpelarList[0];
+
             InaktiveraAndraSpelare();
             //Ge kort till alla spelare och visa de i deras händer.
-            for(int i = 0; i<SpelarList.Length;i++)
+            for(int i = 0; i<SpelarList.Count;i++)
             {
                 for (int k = 0; k < 3; k++)
                 {
@@ -76,33 +99,65 @@ namespace KortspelsDemo2022
                     
                 }
             }
+        }
 
+        private void BestämVinnare()
+        {
+            Spelare Vinnaren = new Spelare();
+            Lbl_gamemode.Text = "Gamemodet är: "+gamemode.mode.ToString();
 
+            switch(gamemode.mode)
+            {
+                case Gamemode.Mode.HighestValue:
+                    Vinnaren = gamemode.HighestValueVinnare(SpelarList);
+                    break;
+
+                case Gamemode.Mode.LowestValue:
+                    Vinnaren = gamemode.LowestValueVinnare(SpelarList);
+                    break;
+
+                case Gamemode.Mode.MostOfBlack:
+                    Vinnaren = gamemode.MostOfBlackVinnare(SpelarList);
+                    break;
+
+                case Gamemode.Mode.MostOfRed:
+                    Vinnaren = gamemode.MostOfRedVinnare(SpelarList);
+                    break;
+
+                case Gamemode.Mode.MostOfPair:
+                    Vinnaren = gamemode.MostOfPairVinnare(SpelarList);
+                    break;
+            }
+            Lbl_Winner.Text = Vinnaren.Namn;
+            Lbl_explain.Visible = true;
         }
 
         private void PbSpelare_Click(object sender, EventArgs e)
         {
             PictureBox PbSpelare = sender as PictureBox;
             //Ta bort kortet från denna position.
-            int Pbindex = currSpelare.GroupBox.Controls.IndexOf(PbSpelare);
-            
+            if (currSpelare.GroupBox.Controls.Contains(PbSpelare))
+            {
+                PbSpelareAttTaBort.Add(PbSpelare);
+            }
+
         }
 
         private void NästaSpelare()
         {
-            int currSpelareIndex = SpelarList.ToList().IndexOf(currSpelare);
+            PbSpelareAttTaBort.Clear();
+            int currSpelareIndex = SpelarList.IndexOf(currSpelare);
 
-            if ( currSpelareIndex >= 2)
+            if ( currSpelareIndex >= SpelarList.Count-1)
             {
-                //klart
+                BestämVinnare();
             }
             else
             {
+                SpelarList[currSpelareIndex] = currSpelare;
                 currSpelare = SpelarList[currSpelareIndex + 1];
+                InaktiveraAndraSpelare();
             }
-             
-
-
         }
 
         private void InaktiveraAndraSpelare()
@@ -134,8 +189,19 @@ namespace KortspelsDemo2022
 
         private void BtTaBort_Click(object sender, EventArgs e)
         {
+            foreach (PictureBox PbSpelare in PbSpelareAttTaBort)
+            {
+                int NyttKortIndex = currSpelare.GroupBox.Controls.IndexOf(PbSpelare);
+                //Tar bort kortet
+                currSpelare.GeKort(NyttKortIndex);
 
-        }
+                Kort kort = kortlek.GeKort();
+                currSpelare.TaEmotKort(kort);
+                //Tar bort kortet från groupboxen
+                PbSpelare.Image = kort.Bild;
+            }
+            NästaSpelare();
+        }   
 
         private void bt_regler_Click(object sender, EventArgs e)
         {

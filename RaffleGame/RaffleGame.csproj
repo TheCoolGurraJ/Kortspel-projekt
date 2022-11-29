@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Startsidan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startsidan.Designer.cs">
+      <DependentUpon>Startsidan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gamemode.cs" />
     <Compile Include="Kort.cs" />
     <Compile Include="Kortlek.cs" />
@@ -58,12 +64,15 @@
       <DependentUpon>Regler.cs</DependentUpon>
     </Compile>
     <Compile Include="Spelare.cs" />
-    <Compile Include="TestMedSpelare.cs">
+    <Compile Include="Spelet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TestMedSpelare.Designer.cs">
-      <DependentUpon>TestMedSpelare.cs</DependentUpon>
+    <Compile Include="Spelet.Designer.cs">
+      <DependentUpon>Spelet.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Startsidan.resx">
+      <DependentUpon>Startsidan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -76,8 +85,8 @@
     <EmbeddedResource Include="Regler.resx">
       <DependentUpon>Regler.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TestMedSpelare.resx">
-      <DependentUpon>TestMedSpelare.cs</DependentUpon>
+    <EmbeddedResource Include="Spelet.resx">
+      <DependentUpon>Spelet.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

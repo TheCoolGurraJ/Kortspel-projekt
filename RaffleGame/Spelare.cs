@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace KortspelsDemo2022
+namespace RaffleGame
 {
-    class Spelare
+    public class Spelare
     {
         private string _namn;
         private int _poang;

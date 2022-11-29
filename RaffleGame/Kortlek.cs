@@ -4,9 +4,9 @@ using System.Linq;
 using System.Drawing;
 using System.IO;
 
-namespace KortspelsDemo2022
+namespace RaffleGame
 {
-    class Kortlek
+    public class Kortlek
     {
         private List<Kort> hogen = new List<Kort>(); //Lista med alla kort i kortleken.
         private List<Image> kortBilder = new List<Image>(); //Lista med alla kortbilder.
