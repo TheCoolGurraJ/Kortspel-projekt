@@ -17,6 +17,7 @@ namespace RaffleGame
         public Startsidan()
         {
             InitializeComponent();
+            Bt_Back.Visible = false;
         }
 
         private void Bt2Spelare_Click(object sender, EventArgs e)
@@ -29,10 +30,33 @@ namespace RaffleGame
             VisaInput(3);
         }
 
+        private void Bt_Back_Click(object sender, EventArgs e)
+        {
+            Bt2Spelare.Visible = true;
+            Bt3Spelare.Visible = true;
+
+            Bt_Back.Visible = false;
+
+            Bt_Klart.Visible = false;
+
+            Lbl_instruktioner.Text = "Vänligen välj hur många spelare som ska delta.";
+
+            Lbl_Sp1.Visible = false;
+            Lbl_Sp2.Visible = false;
+
+            Tb_Sp1.Visible = false;
+            Tb_Sp2.Visible = false;
+
+            Lbl_Sp3.Visible = false;
+            Tb_Sp3.Visible = false;
+        }
+
         private void VisaInput(int antal)
         {
             Bt2Spelare.Visible = false;
             Bt3Spelare.Visible = false;
+
+            Bt_Back.Visible = true;
 
             Bt_Klart.Visible = true;
 
@@ -72,16 +96,6 @@ namespace RaffleGame
             spelet.SpelSetup();
             spelet.ShowDialog();
             Close();
-
-        }
-
-        private void Tb_Sp3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Lbl_Sp3_Click(object sender, EventArgs e)
-        {
 
         }
     }
