@@ -48,6 +48,7 @@ namespace RaffleGame
             this.Lbl_gamemode = new System.Windows.Forms.Label();
             this.Lbl_Winner = new System.Windows.Forms.Label();
             this.Lbl_explain = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.GbSp1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbSp1K3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbSp1K2)).BeginInit();
@@ -258,11 +259,21 @@ namespace RaffleGame
             this.Lbl_explain.Text = "Vänligen stäng ner och öppna RaffleGame för att lotta ut en ny person.";
             this.Lbl_explain.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "label1";
+            // 
             // Spelet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1564, 1003);
+            this.ClientSize = new System.Drawing.Size(1778, 1050);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Lbl_explain);
             this.Controls.Add(this.Lbl_Winner);
             this.Controls.Add(this.Lbl_gamemode);
@@ -275,6 +286,7 @@ namespace RaffleGame
             this.Controls.Add(this.GbSp1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Spelet";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RaffleGame";
             this.GbSp1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PbSp1K3)).EndInit();
@@ -314,5 +326,6 @@ namespace RaffleGame
         private System.Windows.Forms.Label Lbl_gamemode;
         private System.Windows.Forms.Label Lbl_Winner;
         private System.Windows.Forms.Label Lbl_explain;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using rules_popup;
+using System.IO;
+
 
 namespace RaffleGame
 {
@@ -24,10 +26,16 @@ namespace RaffleGame
         Kortlek kortlek = new Kortlek(true);
 
         List<PictureBox> PbSpelareAttTaBort = new List<PictureBox>();
-        Gamemode gamemode = new Gamemode(Gamemode.Mode.MostOfPair);
+        Gamemode gamemode = new Gamemode();
+        Image redx;
         public Spelet()
         {
             InitializeComponent();
+
+            //tilldelar vårt kryss sin bild
+            DirectoryInfo sokvag = new DirectoryInfo("röttkryss"); // Sökväg till bilderna.
+            FileInfo[] bildArr = sokvag.GetFiles("*.png", SearchOption.TopDirectoryOnly);
+            redx = (Image.FromFile(bildArr[0].FullName));
         }
 
         //Skapar vår lista av spelare från de vi skapade från startsidan.
@@ -128,7 +136,11 @@ namespace RaffleGame
                     Vinnaren = gamemode.MostOfPairVinnare(SpelarList);
                     break;
             }
-            Lbl_Winner.Text = Vinnaren.Namn;
+            if(Vinnaren.Namn == "Namnlös")
+                Lbl_Winner.Text = "ingen eftersom det blev oavgjort.";
+            else
+                Lbl_Winner.Text = Vinnaren.Namn;    
+
             Lbl_explain.Visible = true;
         }
 
@@ -139,10 +151,19 @@ namespace RaffleGame
             if (currSpelare.GroupBox.Controls.Contains(PbSpelare))
             {
                 PbSpelareAttTaBort.Add(PbSpelare);
+                //grafik för att visa att kortet är markerat
+                Graphics g = PbSpelare.CreateGraphics();
+                Pen pen = new Pen(Color.Red, 7f);
+                Point start = new Point(PbSpelare.Bounds.X-PbSpelare.Left, PbSpelare.Bounds.Y-PbSpelare.Top);
+                Point end = new Point(PbSpelare.Bounds.X - PbSpelare.Left + PbSpelare.Right - PbSpelare.Left, PbSpelare.Bounds.Y +PbSpelare.Bottom-PbSpelare.Top-PbSpelare.Top);
+
+                g.DrawLine(pen, start, end);
+                g.Dispose();
             }
 
         }
 
+        //Nästa spelare på tur
         private void NästaSpelare()
         {
             PbSpelareAttTaBort.Clear();
@@ -150,16 +171,18 @@ namespace RaffleGame
 
             if ( currSpelareIndex >= SpelarList.Count-1)
             {
+                //om vi dragit igenom att spelare
                 BestämVinnare();
             }
             else
             {
+                //om inte, nästa spelare och inaktivera resten.
                 SpelarList[currSpelareIndex] = currSpelare;
                 currSpelare = SpelarList[currSpelareIndex + 1];
                 InaktiveraAndraSpelare();
             }
         }
-
+        //inaktivera funktionerna så att bara en spelare kan spela på en gång.
         private void InaktiveraAndraSpelare()
         {
             //Göm alla andra ta bort knappar förutom nuvarande spelares tur.
@@ -189,6 +212,7 @@ namespace RaffleGame
 
         private void BtTaBort_Click(object sender, EventArgs e)
         {
+            //Ta bort alla våra kort från vår hand och groupbox om de blev markerade under markeringsprocessen.
             foreach (PictureBox PbSpelare in PbSpelareAttTaBort)
             {
                 int NyttKortIndex = currSpelare.GroupBox.Controls.IndexOf(PbSpelare);
@@ -205,6 +229,7 @@ namespace RaffleGame
 
         private void bt_regler_Click(object sender, EventArgs e)
         {
+            //Knapp för reglerna.
             Regler popup = new Regler();
             DialogResult dialogresult = popup.ShowDialog();
         }
