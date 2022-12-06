@@ -48,7 +48,6 @@ namespace RaffleGame
             this.Lbl_gamemode = new System.Windows.Forms.Label();
             this.Lbl_Winner = new System.Windows.Forms.Label();
             this.Lbl_explain = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.GbSp1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbSp1K3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbSp1K2)).BeginInit();
@@ -221,7 +220,7 @@ namespace RaffleGame
             // 
             // bt_regler
             // 
-            this.bt_regler.Location = new System.Drawing.Point(1065, 392);
+            this.bt_regler.Location = new System.Drawing.Point(904, 507);
             this.bt_regler.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bt_regler.Name = "bt_regler";
             this.bt_regler.Size = new System.Drawing.Size(112, 35);
@@ -233,47 +232,37 @@ namespace RaffleGame
             // Lbl_gamemode
             // 
             this.Lbl_gamemode.AutoSize = true;
-            this.Lbl_gamemode.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_gamemode.Location = new System.Drawing.Point(837, 78);
+            this.Lbl_gamemode.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_gamemode.Location = new System.Drawing.Point(704, 122);
             this.Lbl_gamemode.Name = "Lbl_gamemode";
-            this.Lbl_gamemode.Size = new System.Drawing.Size(0, 55);
+            this.Lbl_gamemode.Size = new System.Drawing.Size(0, 40);
             this.Lbl_gamemode.TabIndex = 8;
             // 
             // Lbl_Winner
             // 
             this.Lbl_Winner.AutoSize = true;
-            this.Lbl_Winner.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Winner.Location = new System.Drawing.Point(837, 151);
+            this.Lbl_Winner.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Winner.Location = new System.Drawing.Point(704, 195);
             this.Lbl_Winner.Name = "Lbl_Winner";
-            this.Lbl_Winner.Size = new System.Drawing.Size(0, 55);
+            this.Lbl_Winner.Size = new System.Drawing.Size(0, 40);
             this.Lbl_Winner.TabIndex = 9;
             // 
             // Lbl_explain
             // 
             this.Lbl_explain.AutoSize = true;
             this.Lbl_explain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_explain.Location = new System.Drawing.Point(577, 240);
+            this.Lbl_explain.Location = new System.Drawing.Point(706, 365);
             this.Lbl_explain.Name = "Lbl_explain";
-            this.Lbl_explain.Size = new System.Drawing.Size(825, 29);
+            this.Lbl_explain.Size = new System.Drawing.Size(510, 58);
             this.Lbl_explain.TabIndex = 10;
-            this.Lbl_explain.Text = "Vänligen stäng ner och öppna RaffleGame för att lotta ut en ny person.";
+            this.Lbl_explain.Text = "Vänligen stäng ner och öppna RaffleGame \r\nför att lotta ut en ny person.";
             this.Lbl_explain.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "label1";
             // 
             // Spelet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1778, 1050);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.Lbl_explain);
             this.Controls.Add(this.Lbl_Winner);
             this.Controls.Add(this.Lbl_gamemode);
@@ -326,6 +315,5 @@ namespace RaffleGame
         private System.Windows.Forms.Label Lbl_gamemode;
         private System.Windows.Forms.Label Lbl_Winner;
         private System.Windows.Forms.Label Lbl_explain;
-        private System.Windows.Forms.Label label1;
     }
 }

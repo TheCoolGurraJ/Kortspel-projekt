@@ -139,7 +139,7 @@ namespace RaffleGame
             if(Vinnaren.Namn == "Namnlös")
                 Lbl_Winner.Text = "ingen eftersom det blev oavgjort.";
             else
-                Lbl_Winner.Text = Vinnaren.Namn;    
+                Lbl_Winner.Text = "Vinnaren är: " + Vinnaren.Namn;    
 
             Lbl_explain.Visible = true;
         }

@@ -50,7 +50,7 @@ namespace RaffleGame
             this.Lbl_Start.Location = new System.Drawing.Point(195, 75);
             this.Lbl_Start.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_Start.Name = "Lbl_Start";
-            this.Lbl_Start.Size = new System.Drawing.Size(557, 51);
+            this.Lbl_Start.Size = new System.Drawing.Size(826, 73);
             this.Lbl_Start.TabIndex = 0;
             this.Lbl_Start.Text = "Välkommen till RaffleGame!";
             // 
@@ -58,7 +58,7 @@ namespace RaffleGame
             // 
             this.Bt2Spelare.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt2Spelare.Location = new System.Drawing.Point(219, 208);
-            this.Bt2Spelare.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Bt2Spelare.Margin = new System.Windows.Forms.Padding(2);
             this.Bt2Spelare.Name = "Bt2Spelare";
             this.Bt2Spelare.Size = new System.Drawing.Size(139, 53);
             this.Bt2Spelare.TabIndex = 1;
@@ -70,7 +70,7 @@ namespace RaffleGame
             // 
             this.Bt3Spelare.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt3Spelare.Location = new System.Drawing.Point(580, 208);
-            this.Bt3Spelare.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Bt3Spelare.Margin = new System.Windows.Forms.Padding(2);
             this.Bt3Spelare.Name = "Bt3Spelare";
             this.Bt3Spelare.Size = new System.Drawing.Size(139, 53);
             this.Bt3Spelare.TabIndex = 2;
@@ -88,7 +88,7 @@ namespace RaffleGame
             this.Lbl_instruktioner.Location = new System.Drawing.Point(202, 139);
             this.Lbl_instruktioner.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_instruktioner.Name = "Lbl_instruktioner";
-            this.Lbl_instruktioner.Size = new System.Drawing.Size(336, 16);
+            this.Lbl_instruktioner.Size = new System.Drawing.Size(466, 25);
             this.Lbl_instruktioner.TabIndex = 3;
             this.Lbl_instruktioner.Text = "Vänligen välj hur många spelare som ska delta.";
             this.Lbl_instruktioner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,9 +97,9 @@ namespace RaffleGame
             // 
             this.Tb_Sp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_Sp1.Location = new System.Drawing.Point(413, 208);
-            this.Tb_Sp1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Tb_Sp1.Margin = new System.Windows.Forms.Padding(2);
             this.Tb_Sp1.Name = "Tb_Sp1";
-            this.Tb_Sp1.Size = new System.Drawing.Size(124, 26);
+            this.Tb_Sp1.Size = new System.Drawing.Size(124, 35);
             this.Tb_Sp1.TabIndex = 4;
             this.Tb_Sp1.Visible = false;
             // 
@@ -107,9 +107,9 @@ namespace RaffleGame
             // 
             this.Tb_Sp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_Sp2.Location = new System.Drawing.Point(413, 256);
-            this.Tb_Sp2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Tb_Sp2.Margin = new System.Windows.Forms.Padding(2);
             this.Tb_Sp2.Name = "Tb_Sp2";
-            this.Tb_Sp2.Size = new System.Drawing.Size(124, 26);
+            this.Tb_Sp2.Size = new System.Drawing.Size(124, 35);
             this.Tb_Sp2.TabIndex = 5;
             this.Tb_Sp2.Visible = false;
             // 
@@ -117,9 +117,9 @@ namespace RaffleGame
             // 
             this.Tb_Sp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_Sp3.Location = new System.Drawing.Point(413, 306);
-            this.Tb_Sp3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Tb_Sp3.Margin = new System.Windows.Forms.Padding(2);
             this.Tb_Sp3.Name = "Tb_Sp3";
-            this.Tb_Sp3.Size = new System.Drawing.Size(124, 26);
+            this.Tb_Sp3.Size = new System.Drawing.Size(124, 35);
             this.Tb_Sp3.TabIndex = 6;
             this.Tb_Sp3.Visible = false;
             // 
@@ -130,7 +130,7 @@ namespace RaffleGame
             this.Lbl_Sp1.Location = new System.Drawing.Point(417, 190);
             this.Lbl_Sp1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_Sp1.Name = "Lbl_Sp1";
-            this.Lbl_Sp1.Size = new System.Drawing.Size(69, 17);
+            this.Lbl_Sp1.Size = new System.Drawing.Size(96, 25);
             this.Lbl_Sp1.TabIndex = 7;
             this.Lbl_Sp1.Text = "Spelare 1";
             this.Lbl_Sp1.Visible = false;
@@ -142,7 +142,7 @@ namespace RaffleGame
             this.Lbl_Sp2.Location = new System.Drawing.Point(417, 238);
             this.Lbl_Sp2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_Sp2.Name = "Lbl_Sp2";
-            this.Lbl_Sp2.Size = new System.Drawing.Size(69, 17);
+            this.Lbl_Sp2.Size = new System.Drawing.Size(96, 25);
             this.Lbl_Sp2.TabIndex = 8;
             this.Lbl_Sp2.Text = "Spelare 2";
             this.Lbl_Sp2.Visible = false;
@@ -154,7 +154,7 @@ namespace RaffleGame
             this.Lbl_Sp3.Location = new System.Drawing.Point(417, 288);
             this.Lbl_Sp3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_Sp3.Name = "Lbl_Sp3";
-            this.Lbl_Sp3.Size = new System.Drawing.Size(69, 17);
+            this.Lbl_Sp3.Size = new System.Drawing.Size(96, 25);
             this.Lbl_Sp3.TabIndex = 9;
             this.Lbl_Sp3.Text = "Spelare 3";
             this.Lbl_Sp3.Visible = false;
@@ -163,7 +163,7 @@ namespace RaffleGame
             // 
             this.Bt_Klart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_Klart.Location = new System.Drawing.Point(580, 298);
-            this.Bt_Klart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Bt_Klart.Margin = new System.Windows.Forms.Padding(2);
             this.Bt_Klart.Name = "Bt_Klart";
             this.Bt_Klart.Size = new System.Drawing.Size(139, 34);
             this.Bt_Klart.TabIndex = 10;
@@ -185,9 +185,9 @@ namespace RaffleGame
             // 
             // Startsidan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(997, 409);
+            this.ClientSize = new System.Drawing.Size(1024, 423);
             this.Controls.Add(this.Bt_Back);
             this.Controls.Add(this.Bt_Klart);
             this.Controls.Add(this.Lbl_Sp3);
@@ -201,7 +201,7 @@ namespace RaffleGame
             this.Controls.Add(this.Bt2Spelare);
             this.Controls.Add(this.Lbl_Start);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Startsidan";
             this.Text = "RaffleGame";
             this.ResumeLayout(false);
